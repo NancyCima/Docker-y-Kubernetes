@@ -1,0 +1,25 @@
+Inputs y outputs esperados:
+
+1. GET a localhost:8080/analyze_text?text=Hola mundo
+   Output:
+   {
+       "original_text": "Hola mundo",
+       "length": 10,
+       "word_count": 2,
+       "uppercase": "HOLA MUNDO",
+       "reversed": "odnum aloH"
+   }
+
+2. GET a localhost:8080/analyze_text?text=Docker es genial!
+   Output:
+   {
+       "original_text": "Docker es genial!",
+       "length": 17,
+       "word_count": 3,
+       "uppercase": "DOCKER ES GENIAL!",
+       "reversed": "!laineg se rekcoD"
+   }
+
+3. GET a localhost:8080/analyze_text?text=
+   Output:
+   {"detail": [{"loc": ["query", "text"], "msg": "field required", "type": "value_error.missing"}]}

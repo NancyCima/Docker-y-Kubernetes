@@ -119,6 +119,15 @@ docker images
 ```bash
 docker rmi fastapi-server
 ```  
+---
+
+### **Fundamentación de las tecnologías elegidas**
+
+Elegí **Python** como lenguaje para este proyecto porque es con el que me siento más cómoda, ya que es el lenguaje que uso en mi día a día, tanto en la universidad como en el trabajo, por lo que tengo mucha experiencia con él.
+
+Por otro lado, seleccioné **FastAPI** porque ya lo he utilizado en proyectos académicos y laborales. Es un framework que me resulta práctico por lo rápido que se puede implementar una API funcional y bien documentada.
+
+En resumen, opté por estas tecnologías porque son las que mejor manejo y las que considero más adecuadas para este tipo de proyectos.
 
 ---
 

@@ -1,0 +1,43 @@
+# Ignorar entornos virtuales de Python
+venv/
+.env/
+
+# Ignorar archivos de compilación de Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignorar configuraciones de logs y bases de datos locales
+*.log
+*.sqlite3
+
+# Ignorar archivos relacionados con Docker que no necesitas versionar
+app/*.log
+app/*.pid
+app/*.sock
+app/data/
+
+# Ignorar archivos generados por Kubernetes
+*.out
+*.tmp
+
+# Ignorar configuraciones locales de desarrollo
+.idea/
+.vscode/
+*.swp
+
+# Ignorar imágenes Docker locales
+*.tar
+
+# Ignorar configuraciones sensibles o específicas de entorno
+*.env
+.env.*
+secrets.yaml
+
+# Ignorar configuraciones de sistema específicas
+.DS_Store
+Thumbs.db
+
+# Ignorar otros archivos innecesarios
+*.bak

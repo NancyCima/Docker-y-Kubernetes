@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-deployment
+  labels:
+    app: fastapi
+spec:
+  replicas: 3  # Número de Pods activos
+  selector:
+    matchLabels:
+      app: fastapi
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  template:
+    metadata:
+      labels:
+        app: fastapi
+    spec:
+      containers:
+      - name: fastapi-container
+        image: fastapi-server:latest  # Imagen Docker personalizada
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+          limits:
+            memory: "256Mi"
+            cpu: "500m"

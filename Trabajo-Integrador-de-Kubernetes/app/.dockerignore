@@ -1,0 +1,41 @@
+# Ignorar archivos y carpetas relacionadas con entornos virtuales
+venv/
+.env/
+
+# Ignorar archivos de configuración local
+*.env
+*.local
+
+# Ignorar archivos de logs
+*.log
+*.pid
+*.sock
+
+# Ignorar archivos de compilación de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar configuraciones de IDE y editor
+.idea/
+.vscode/
+*.swp
+
+# Ignorar datos temporales y de almacenamiento
+*.tmp
+*.bak
+data/
+tmp/
+
+# Ignorar imágenes y exportaciones
+*.tar
+*.gz
+
+# Ignorar archivos de sistema específicos
+.DS_Store
+Thumbs.db
+
+# Ignorar carpetas de pruebas o documentación local
+tests/
+docs/
